@@ -1,7 +1,6 @@
+import Header from "@/components/Header";
 import useGet from "@/hooks/useGet";
-import { useEffect, useState } from "react";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
-import { Pagination } from "@mui/material";
 
 
 const List = () => {
@@ -19,7 +18,7 @@ const List = () => {
 
   return (
     <>
-      <h1>board-project-front</h1>
+    <Header/>
       {data ? (
         <div>
         <DataGrid
